@@ -123,6 +123,7 @@ int main(void)
 			 lcd_send_cmd(0xc0);
 		  }
 		  lcd_send_data(i);
+		  HAL_Delay(200);
 	  }
 	  lcd_send_cmd(0x01);
 	  HAL_Delay(2000);
